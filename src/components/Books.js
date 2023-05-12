@@ -1,6 +1,6 @@
 import React from 'react';
-import AddBook from './addBook';
-import BookCard from './booksCard';
+import AddBook from './AddBook';
+import BookCard from './BooksCard';
 
 function Books() {
   const books = [{
