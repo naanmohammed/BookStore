@@ -1,6 +1,6 @@
 import React from 'react';
-import AddBook from './AddBook';
-import BookCard from './BooksCard';
+import AddBook from './addBook';
+import BookCard from './booksCard';
 
 function Books() {
   const books = [{
@@ -8,7 +8,7 @@ function Books() {
     category: 'Fiction',
     title: 'The Adventures of Huck Finn',
     author: 'Mark Twain',
-    progres: '44%',
+    progress: '44%',
     currentChapter: 'CURRENT CHAPTER',
     chapterNumber: 'Chapter 8',
   },
@@ -17,7 +17,7 @@ function Books() {
     category: 'Finance',
     title: 'Rich Dad, Poor Dad',
     author: 'Robert Kiyosaki',
-    progres: '28%',
+    progress: '28%',
     currentChapter: 'CURRENT CHAPTER',
     chapterNumber: 'Chapter 3',
   },
@@ -26,7 +26,7 @@ function Books() {
     category: 'Self Development',
     title: 'Atomic Habits',
     author: 'James Clear',
-    progres: '0%',
+    progress: '0%',
     currentChapter: 'CURRENT CHAPTER',
     chapterNumber: 'Preface',
   }];

@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fafafa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navBar {
+  background-color: white;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: space-between;
+  margin-left: 2.5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navItems {
+  background-color: white;
+  display: flex;
+  gap: 3rem;
+}
+
+.navItems h2 {
+  background-color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0290ff;
+}
+
+.navLinks {
+  background-color: white;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navLinks li {
+  list-style: none;
+}
+
+.navLinks li a {
+  background-color: white;
+  text-decoration: none;
+}
+
+.books_link {
+  font-size: 1rem;
+  color: #121212;
+}
+
+.categories_link {
+  font-size: 1rem;
+  color: #b9babd;
+}
+
+.mainContainer {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+  margin: 2.5% 5%;
+}
+
+.bookContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  border: 1px solid black;
+  gap: 1rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.book {
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  gap: 0.25rem;
+  width: 20rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.category_display {
+  color: rgb(122, 122, 122);
+}
+
+.title_display {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.buttonsList {
+  display: flex;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.buttonsList li {
+  list-style: none;
+}
+
+.addBookForm select {
+  width: 25%;
+}
+
+.addBookForm button {
+  width: 15%;
+}
+
+.buttonsList li button {
+  border: none;
+}
+
+.bookChart {
+  display: flex;
+  gap: 0.5rem;
+  width: 15rem;
+  border-right: 2px solid rgb(209, 208, 208);
+  padding-right: 60px;
+}
+
+.progress-bar {
+  width: 175px;
+  height: 75px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #eee;
+}
+
+.bookChapter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 20rem;
+}
+
+.currentChapter_display {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #858585;
+}
+
+.chapterNumber_display {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.update_progress_btn {
+  width: 11.5rem;
+  height: 2.063rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+}
+
+.addBook {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 2rem;
+  margin-bottom: 100px;
+}
+
+.addBook h3 {
+  color: #888;
+}
+
+.addBookForm {
+  display: flex;
+  gap: 1rem;
+}
+
+.addBookForm input {
+  width: 60%;
+  padding: 0.6rem;
 }
