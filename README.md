@@ -32,7 +32,7 @@
 # 📖 Book Store <a name="about-project"></a>
 
 "Book Store" is a website for all fans of books. It is a Single Page App (SPA) that allows users to:
-    - Buy books
+    - manage a bookstore
     - view available books
 
 ## 🛠 Built With <a name="built-with"></a> 
@@ -46,7 +46,7 @@ HTML, CSS, and React
 
 ### Key Features <a name="key-features"></a>
 
-- Allows users to Buy books
+- Allows users to manage books
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
