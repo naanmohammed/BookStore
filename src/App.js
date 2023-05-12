@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Books from './components/books.js';
+import Books from './components/books';
 import Navbar from './components/navBar';
-import Categories from './components/categories.js';
+import Categories from './components/categories';
 
 function App() {
   return (
