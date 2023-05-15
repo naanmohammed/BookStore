@@ -1,18 +1,20 @@
 import React from 'react';
-import Proptypes from 'prop-types';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/booksSlice';
 
-function BookCard({
-  title, category, author,
-}) {
-  return (
-    <div className="bookContainer">
+function BookCard() {
+  const books = useSelector((store) => store.books.books);
+  const dispatch = useDispatch();
+
+  const renderBooks = books.map((book) => (
+    <div key={book.item_id} className="bookContainer">
       <div className="book">
-        <p className="category_display">{category}</p>
-        <p className="title_display">{title}</p>
-        <p className="author_display">{author}</p>
+        <p className="category_display">{book.category}</p>
+        <p className="title_display">{book.title}</p>
+        <p className="author_display">{book.author}</p>
         <ul className="buttonsList">
           <li><button type="button">Comments |</button></li>
-          <li><button type="button">Remove |</button></li>
+          <li><button type="button" onClick={() => dispatch(removeBook(book.item_id))}>Remove |</button></li>
           <li><button type="button">Edit </button></li>
         </ul>
       </div>
@@ -29,13 +31,13 @@ function BookCard({
         <button type="button" className="update_progress_btn">Update Progress</button>
       </div>
     </div>
+  ));
+
+  return (
+    <div className="mainContainer">
+      {renderBooks}
+    </div>
   );
 }
-
-BookCard.propTypes = {
-  title: Proptypes.string.isRequired,
-  category: Proptypes.string.isRequired,
-  author: Proptypes.string.isRequired,
-};
 
 export default BookCard;
