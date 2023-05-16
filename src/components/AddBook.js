@@ -35,6 +35,7 @@ function AddBook() {
       <h2>Add new book</h2>
       <form className="addBookForm">
         <input
+          className="title_input"
           value={values.title || ''}
           type="text"
           name="title"
@@ -43,6 +44,7 @@ function AddBook() {
         />
 
         <input
+          className="author_input"
           value={values.author || ''}
           type="text"
           name="author"
@@ -50,7 +52,7 @@ function AddBook() {
           onChange={handleChange}
         />
 
-        <button type="submit" onClick={handleSubmit}>Add Book</button>
+        <button className="addBookBtn" type="submit" onClick={handleSubmit}>Add Book</button>
       </form>
     </section>
   );
