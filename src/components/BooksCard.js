@@ -32,14 +32,14 @@ function BookCard() {
       <div className="bookChart">
         <div className="progress-bar" />
         <div>
-          <p>28%</p>
-          <p>COMPLETED</p>
+          <p className="percentComplete">100%</p>
+          <p className="complete">Completed</p>
         </div>
       </div>
       <div className="bookChapter">
-        <p className="currentChapter_display">10</p>
-        <p className="chapterNumber_display">Current Chapter</p>
-        <button type="button" className="update_progress_btn">Update Progress</button>
+        <p className="currentChapter_display">CURRENT CHAPTER</p>
+        <p className="chapterNumber_display">Chapter 17</p>
+        <button type="button" className="update_progress_btn">UPDATE PROGRESS</button>
       </div>
     </div>
   ));
